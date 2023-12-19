@@ -13,10 +13,11 @@ export default defineComponent({
     color: {
       type: String as PropType<bgColorName>,
       default: 'info'
+    },
+    textColor: {
+      type: String as PropType<string>,
+      required: true
     }
-    // textColor: {
-
-    // },
     // size: {},
     // square: {},
     // outline: {},
@@ -48,7 +49,8 @@ export default defineComponent({
   vertical-align: middle;
   text-decoration: none;
   color: $white;
-  transition: background-color .3s cubic-bezier(.25,.8,.5,1),opacity .4s cubic-bezier(.25,.8,.5,1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.5, 1),
+    opacity 0.4s cubic-bezier(0.25, 0.8, 0.5, 1);
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
