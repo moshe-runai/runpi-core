@@ -1,0 +1,94 @@
+@import '/variables';
+
+// we wanted to use the quasar typography definition.
+// Here you can find the size/ weight for each class (I added it here for a quick view)
+// (You can find it here: https://quasar.dev/style/typography)
+
+@mixin font-size($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+.text-body-color {
+  color: $main-font-color;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// Headings
+.text-caption {
+  @include font-size(12px, 400);
+}
+
+.text-body2 {
+  @include font-size(14px, 400);
+}
+
+.text-body1 {
+  @include font-size(16px, 400);
+}
+
+.text-subtitle2 {
+  @include font-size(14px, 500);
+}
+
+.text-subtitle1 {
+  @include font-size(16px, 400);
+}
+
+.text-h6,
+h6 {
+  @include font-size(20px, 500);
+}
+
+.text-h5,
+h5 {
+  @include font-size(24px, 400);
+}
+
+.text-h4,
+h4 {
+  @include font-size(34px, 400);
+}
+
+.text-h3,
+h3 {
+  @include font-size(48px, 400);
+}
+
+.text-h2,
+h2 {
+  @include font-size(60px, 300);
+}
+
+.text-h1,
+h1 {
+  @include font-size(96px, 300);
+}
+
+// Font Weights
+.text-weight-thin {
+  font-weight: 100;
+}
+
+.text-weight-light {
+  font-weight: 300;
+}
+
+.text-weight-regular {
+  font-weight: 400;
+}
+
+.text-weight-medium {
+  font-weight: 500;
+}
+
+.text-weight-bold {
+  font-weight: 700;
+}
+
+.text-weight-bolder {
+  font-weight: 900;
+}
